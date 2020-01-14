@@ -1,12 +1,32 @@
 <html>
 <head></head>
-<frameset cols = "25%, *, 25%">
-<frame src = "html1.html"/>
-<frameset rows = "25%, *, 25%">
-<frame src = "html2.html"/>
-<frame src = "html3.html"/>
-<frame src = "html4.html"/>
-</frameset>
-<frame src = "html1.html"/>
-</frameset>
+<body>
+<h1> Registration Form</h1>
+<form>
+Name: <input type = "text" name = "name" /> <br>
+Address: <input type = "text" name = "address" /> <br>
+Customer code: <input type = "password" name = "cCode"/> <br>
+Select a size <br>
+<input type = "radio" name = "size" value = "K"/> King
+<input type = "radio" name = "size" value = "T"/> Twin
+<input type = "radio" name = "size" value = "S" checked /> Small <br> 
+Extras: <br>
+<input type = "checkbox" name = "extra1" value = "drawers"/> Drawers
+<input type = "checkbox" name = "extra2" value = "mattress" checked/> Mattress
+<input type = "checkbox" name = "extra3" value = "casters"/> Casters <br> 
+Type of Wood 
+<select name = "wood">
+<option value = "Mahogany"> Mahogany </option>
+<option value = "Pine"> Pine </option>
+<option value = "Maple-wood"> Maple-wood </option>
+<option value = "Teak" selected> Teak </option>
+</select> <br>
+Please share your commnets with us: <br>
+<textarea name = "comments" rows = "6" cols = "60">
+Comments...
+</textarea> <br>
+<input type = "submit" name = "cmd1" value = "Save"/>
+<input type = "reset" name = "cmd2" value = "Cancel"/> 
+</form>
+</body>
 </html>
